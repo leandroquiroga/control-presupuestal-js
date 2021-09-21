@@ -1,0 +1,43 @@
+# Control Presupuestal 📑
+Una pequeña app con la que podes controlar tu presupuesto diaro, semanal, etc. Esta app requiere un monto inicial para poder comenzar, una vez que tenga un presupuesto inicial podemos agregar un gasto con su nombre y monto. Por cada gasto que generamos se nos actualiza el presupuesto, podemos manipular los gastos eliminandolos y al realizar esta acción se nos actualiza el presupuesto.
+
+# Construido con 🛠️
+* HTML5
+* CSS3
+* JavaScript
+* Bootstrap
+
+# Funcionalidades ⚙️
+## Validaciones 
+Esta funcionablidad se basa en dos partes, la primera es para la validación de numeros y texto, la segunda controla la cantindad de monto que tenemos disponible para gastar, en base ese monto te permite generar mas gastos o no.
+
+### Numeros :
+Esta validacion no solo se basa en que sea numeros sino que toma ciertas condiciones como por ejemplo:
+* Presupuesto inicial con una longitud maxima de 10 cifras
+* No admiten numeros negativos 
+* No admite el numero 0
+
+### Texto : 
+En la validaciones de los texto solamente controla que los datos ingresados solo sean de tipos textos. 
+
+## Lista de gastos
+La listas de gastos es similar a un TODO list en la que cuando generamos un gasto se nos agrega dinamicamente el tipo de gasto, monto y la opcion de borrar dicho gasto. 
+
+## Habilitaciones del formulario de gastos 
+Esta formulario necesita un presupuesto inicial para activarse, una vez activado nos permite ingresar gastos a nuesto TODO list. 
+
+## Control de gastos 
+Mediante mas gastos generemos menos saldo disponible nos queda por ende la aplicacion nos avisara cuando estemos un saldo de 50% menos al presupuesto inicial, colocandose de un color amarillo, cuando ocupemos el 75% del presupuesto se colocara de color rojo.  
+
+# Posibles mejoras 🚀
+* Modificar el restante cuando agregamos mas presupuesto al que tenemos
+* Usar el localStorage para guardar la informacion. 
+# Despliegue 📦
+
+# Contacto 📫
+- [Linkedin](https://www.linkedin.com/in/leanquiroga95/)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/leandroquiroga)
+- [Email](mailto:leandroquiroga9514@gmail.com)
+
+# Autor 👤
+Realizado con ❤️ por [Leandro Quiroga](https://github.com/leandroquiroga);
