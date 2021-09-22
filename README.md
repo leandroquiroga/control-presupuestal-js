@@ -45,7 +45,7 @@ Mediante mas gastos generemos menos saldo disponible nos queda por ende la aplic
 * Modificar el restante cuando agregamos mas presupuesto al que tenemos
 * Usar el localStorage para guardar la informacion. 
 # Despliegue 📦
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cebc1dbb-2669-4083-84bc-81be6ff32801/deploy-status)](https://gastocontrol.netlify.app/)
 # Contacto 📫
 - [Linkedin](https://www.linkedin.com/in/leanquiroga95/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/leandroquiroga)
