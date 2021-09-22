@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Control de gastos</title>
+        <link rel="stylesheet" href="/public/css/styles.css">
+        <!-- CDN Boostrap watch-->
+        <link rel="stylesheet" href="https://bootswatch.com/5/superhero/bootstrap.min.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="hedear p-1 my-0 mx-auto">
+            <h1 class="text-center title">Presupuesto General</h1>
+        </header>
+        <section class="container d-flex justify-content-center align-items-center">
+            <article class="card-control p-2 m-auto shadow p-3 mb-5 bg-white rounded-5">
+                <section class="p-2 border-end">
+                    <!-- Ingreso de presupuesto -->
+                    <article class="border-bottom p-3"> 
+                        <h3 class="title-presupuesto text-center">Ingrese su Presupuesto: </h3>
+                        <form action="" id="presupuesto" >
+                            <div class="mb-3 row">
+                                <label for="initial-monto" class="form-label label-input">Presupuesto inicial: </label>
+                                <input type="text" autocomplete="off" required minlength="1" maxlength="10" name="initial-monto" id="income-mount" class="input-data" placeholder="Ingrese su monto inicial...">
+                            </div>
+                            <input type="submit" id="presupuestar" class="button border-0 p-1" value="Presupuestar">
+                        </form>
+                    </article>
+                    <!-- Ingresos de gastos generales  -->
+                    <article class="border-bottom p-3">
+                        <h3 class="title-presupuesto text-center">Ingrese su Gasto: </h3>
+                        <form action="" id="gastos">
+                            <div class="mb-3 row">
+                                <label for="tipo-gasto" class="form-label label-input">Tipo de gasto: </label>
+                                <input type="text" name="tipo-gasto" id="name-gasto" class="input-data" placeholder="Nombre Gasto...">
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="gasto-monto" class="form-label label-input">Gasto: </label>
+                                <input type="text" name="gasto-monto" id="gasto-cant" class="input-data" placeholder="Monto gasto...">
+                            </div>
+                            <input type="submit" id="add-gastos" class="button border-0 p-1" value="Agregar">
+                        </form>
+                    </article>
+                </section>
+
+                <!-- Gastos -->
+                <section class="p-2 showMonto oculto">
+                    <!-- Mesagge Gastos, presupuesto-->
+                    <article class="presupuesto-card m-1 p-1 border-bottom border-gray justify-content-center align-items-center ">
+                        <div class=" p-2 alert alert-info rounded-1 d-flex justify-content-center align-items-center my-2" id="total-ingresado" role="alert">
+                            <p class="text-alert text-center my-1"></p>
+                        </div>
+                        <div class="p-2 alert alert-success rounded-1 d-flex justify-content-center align-items-center my-2" id="monto-total" role="alert">
+                            <p class="text-alert text-center my-1"></p>
+                        </div>
+                    </article>
+                <!-- Todo list de gastos -->
+                    <article class="lista-gastos  row p-1 justify-content-center align-items-center oculto">
+                        <h3 class="title-presupuesto text-center">Lista de gastos: </h3>
+                        <!-- Listado aparece dinamicamente-->
+                        <ul class="listado"></ul>
+                    </article>
+                </section>
+            </article>
+        </section>
+        <!-- Script-->
+        <script src="/js/app.js" type="module"></script>
+    </body>
+</html>
