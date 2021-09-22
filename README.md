@@ -23,11 +23,18 @@ En la validaciones de los texto solamente controla que los datos ingresados solo
 ## Lista de gastos
 La listas de gastos es similar a un TODO list en la que cuando generamos un gasto se nos agrega dinamicamente el tipo de gasto, monto y la opcion de borrar dicho gasto. 
 
+![Listas de gastos](https://user-images.githubusercontent.com/80013958/134263320-71bbf6fc-1263-4a89-8819-f3d5137342bc.png)
+
 ## Habilitaciones del formulario de gastos 
 Esta formulario necesita un presupuesto inicial para activarse, una vez activado nos permite ingresar gastos a nuesto TODO list. 
 
 ## Control de gastos 
 Mediante mas gastos generemos menos saldo disponible nos queda por ende la aplicacion nos avisara cuando estemos un saldo de 50% menos al presupuesto inicial, colocandose de un color amarillo, cuando ocupemos el 75% del presupuesto se colocara de color rojo.  
+* Saldo restante menor al 50%
+![50%](https://user-images.githubusercontent.com/80013958/134263389-62bc13cf-1567-404b-85ae-7643834a3bf8.png)
+
+* Saldo restante menor al 75%
+![75%](https://user-images.githubusercontent.com/80013958/134263405-8ec2ac5d-662a-4add-bbeb-784eab20cfd4.png)
 
 # Posibles mejoras 🚀
 * Modificar el restante cuando agregamos mas presupuesto al que tenemos
